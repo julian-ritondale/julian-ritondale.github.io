@@ -27,7 +27,7 @@ i18n
 
             about_title: "ABOUT",
             years_old: "years old",
-            about_desc_1: "I care about why things are built, and who they are built for, as much as how they are built.",
+
             about_desc_2: "Currently interested in AI, creative technology and product development.",
 
             education_title: "EDUCATION",
@@ -78,7 +78,7 @@ i18n
             ],
 
             project_4_name: "Sonora",
-            project_4_stack: "TypeScript, Tailwind CSS, React, NestJS, PostgreSQL",
+            project_4_stack: "TypeScript, Tailwind CSS, React, Nest JS, PostgreSQL",
             project_4_date: "Aug. 2025 - Nov. 2025",
             project_4_bullets: [
               "Collaborated developing a web application for browsing and reviewing music content.",
@@ -96,6 +96,17 @@ i18n
               "Enabled a playable chess and checkers UI by integrating the game engine to a provided JavaFX interface."
             ],
 
+            project_6_name: "Agent Orchestra",
+            project_6_stack: "Python, OpenAI API, ChromaDB, Langfuse",
+            project_6_date: "Jul. 2026",
+            project_6_bullets: [
+              "Collaborated building a multi-agent coding assistant orchestrating five specialized sub-agents with file, command, and search tools",
+              "Designed a three-tier memory system to persist findings and resume interrupted tasks across sessions",
+              "Implemented a RAG pipeline with ChromaDB and OpenAI embeddings to ground agent responses in official documentation",
+              "Designed a permissions layer enforcing per-agent tool access, path restrictions, and command allow/deny lists",
+              "Integrated Langfuse for observability, tracing per-agent spans, token usage/cost, and RAG retrieval quality"
+            ],
+
             activities_title: "ACTIVITIES",
             activities_desc: "Try everything. If the goal is to experience, you always win.",
             activity_details_label: "Details",
@@ -103,7 +114,7 @@ i18n
             activity_1_label: "AI Competition",
             activity_1_date: "Jun. 2026",
             activity_1_place: "1st Place",
-            activity_1_note: "Won a Messi jersey ;)",
+            activity_1_note: "Won a Messi jersey :)",
             activity_1_bullets: [
               "Collaborated developing a web application that classified all 72 FIFA World Cup 2026 group-stage matches into three interest levels through user preferences and schedule availability.",
               "Eliminated the need for historical user data by designing a Bayesian elicitation system that estimates individual utility functions through adaptive questionnaires.",
@@ -116,7 +127,9 @@ i18n
             skills_languages_label: "Languages",
             skills_languages: "Kotlin, Java, TypeScript, JavaScript, HTML/CSS, Python, SQL",
             skills_frameworks_label: "Libraries / Frameworks",
-            skills_frameworks: "Spring Boot, Nest JS, React",
+            skills_frameworks: "Spring Boot, Nest JS, Next.js, React",
+            skills_databases_label: "Databases",
+            skills_databases: "PostgreSQL",
             skills_tools_label: "Developer Tools",
             skills_tools: "Git / GitHub, Docker",
 
@@ -146,7 +159,7 @@ i18n
 
             about_title: "SOBRE MÍ",
             years_old: "años",
-            about_desc_1: "Me importa el por qué se construyen las cosas, y para quién se construyen, tanto como el cómo se construyen.",
+
             about_desc_2: "Actualmente interesado en IA, tecnología creativa y desarrollo de productos.",
 
             education_title: "EDUCACIÓN",
@@ -197,7 +210,7 @@ i18n
             ],
 
             project_4_name: "Sonora",
-            project_4_stack: "TypeScript, Tailwind CSS, React, NestJS, PostgreSQL",
+            project_4_stack: "TypeScript, Tailwind CSS, React, Nest JS, PostgreSQL",
             project_4_date: "Ago. 2025 - Nov. 2025",
             project_4_bullets: [
               "Colaboré desarrollando una aplicación web para explorar y reseñar contenido musical.",
@@ -215,6 +228,17 @@ i18n
               "Conecté el motor a una interfaz JavaFX para ofrecer una experiencia de juego completa en ajedrez y damas."
             ],
 
+            project_6_name: "Agent Orchestra",
+            project_6_stack: "Python, OpenAI API, ChromaDB, Langfuse",
+            project_6_date: "Jul. 2026",
+            project_6_bullets: [
+              "Colaboré construyendo un asistente de código multiagente que orquesta cinco sub-agentes especializados con herramientas de archivos, comandos y búsqueda",
+              "Diseñé un sistema de memoria de tres niveles para persistir hallazgos y reanudar tareas interrumpidas entre sesiones",
+              "Implementé un pipeline de RAG con ChromaDB y embeddings de OpenAI para fundamentar las respuestas de los agentes en documentación oficial",
+              "Diseñé una capa de permisos que restringe el acceso a herramientas por agente, rutas de archivo y comandos permitidos/denegados",
+              "Integré Langfuse para observabilidad, registrando spans por agente, uso de tokens/costo, y calidad de recuperación del RAG"
+            ],
+
             activities_title: "ACTIVIDADES",
             activities_desc: "Intentalo todo. Si el objetivo es vivir la experiencia, siempre vas a ganar.",
             activity_details_label: "Detalles",
@@ -222,7 +246,7 @@ i18n
             activity_1_label: "Competencia de IA",
             activity_1_date: "Jun. 2026",
             activity_1_place: "1er Puesto",
-            activity_1_note: "Me gané una camiseta de Messi ;)",
+            activity_1_note: "Me gané una camiseta de Messi :)",
             activity_1_bullets: [
               "Colaboré desarrollando una aplicación web que clasificó los 72 partidos del grupo del Mundial FIFA 2026 en tres niveles de interés según preferencias y disponibilidad horaria del usuario.",
               "Eliminé la necesidad de datos históricos diseñando un sistema de elicitación bayesiana que estima funciones de utilidad individuales mediante cuestionarios adaptativos.",
@@ -235,7 +259,9 @@ i18n
             skills_languages_label: "Lenguajes",
             skills_languages: "Kotlin, Java, TypeScript, JavaScript, HTML/CSS, Python, SQL",
             skills_frameworks_label: "Librerías / Frameworks",
-            skills_frameworks: "Spring Boot, NestJS, React",
+            skills_frameworks: "Spring Boot, Nest JS, React",
+            skills_databases_label: "Bases de Datos",
+            skills_databases: "PostgreSQL",
             skills_tools_label: "Herramientas",
             skills_tools: "Git / GitHub, Docker",
 

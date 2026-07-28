@@ -8,7 +8,7 @@ interface Project {
   stack: string;
   date: string;
   bullets: string[];
-  video?: string;
+  videos?: string[];
 }
 
 function getAge(): number {
@@ -39,18 +39,19 @@ function App() {
   const isSpanish = i18n.language.startsWith('es');
   const age = getAge();
 
-  const projectVideos: Record<number, string> = {
-    0: '/videos/pay-and-pray-demo.mp4',
-    1: '/videos/snippet-searcher-demo.mp4',
-    3: '/videos/sonora-demo.mp4',
+  const projectVideos: Record<number, string[]> = {
+    0: ['/videos/agent-orchestra-demo-1.mp4', '/videos/agent-orchestra-demo-2.mp4'],
+    1: ['/videos/pay-and-pray-demo.mp4'],
+    2: ['/videos/snippet-searcher-demo.mp4'],
+    4: ['/videos/sonora-demo.mp4'],
   };
 
-  const projects: Project[] = [1, 2, 3, 4, 5].map((n, i) => ({
+  const projects: Project[] = [6, 1, 2, 3, 4, 5].map((n, i) => ({
     name: t(`sections.project_${n}_name`),
     stack: t(`sections.project_${n}_stack`),
     date: t(`sections.project_${n}_date`),
     bullets: (t(`sections.project_${n}_bullets`, { returnObjects: true }) as string[]),
-    video: projectVideos[i],
+    videos: projectVideos[i],
   }));
 
   const activityBullets = t('sections.activity_1_bullets', { returnObjects: true }) as string[];
@@ -98,13 +99,12 @@ function App() {
         <section className="portfolio-section" id="about">
           <h2>{t('sections.about_title')}</h2>
           <div className="reflections">
-            <p className="section-desc">{t('sections.about_desc_1')}</p>
             <p className="section-desc">{t('sections.about_desc_2')}</p>
           </div>
           <div className="about-info">
             <span className="about-name">{t('sections.name')}</span>
             <span className="about-detail">{age} {t('sections.years_old')}</span>
-            <span className="about-detail">34.6037°S, 58.3816°W (Buenos Aires, Argentina)</span>
+            <span className="about-detail">Buenos Aires, Argentina</span>
           </div>
         </section>
 
@@ -149,15 +149,16 @@ function App() {
                 </div>
                 {openProjects[i] && (
                   <div className="project-body">
-                    {proj.video && (
+                    {proj.videos && proj.videos.map((vid, vIdx) => (
                       <Video
-                        src={proj.video}
+                        key={vIdx}
+                        src={vid}
                         autoPlay
                         loop
                         muted
                         playsInline
                       />
-                    )}
+                    ))}
                     <ul className="bullet-list">
                       {proj.bullets.map((b, j) => (
                         <li key={j}>{b}</li>
@@ -224,6 +225,10 @@ function App() {
             <div className="skill-row">
               <span className="skill-label">{t('sections.skills_frameworks_label')}:</span>
               <span className="skill-value">{t('sections.skills_frameworks')}</span>
+            </div>
+            <div className="skill-row">
+              <span className="skill-label">{t('sections.skills_databases_label')}:</span>
+              <span className="skill-value">{t('sections.skills_databases')}</span>
             </div>
             <div className="skill-row">
               <span className="skill-label">{t('sections.skills_tools_label')}:</span>
