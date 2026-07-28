@@ -34,7 +34,7 @@ const Sketch: React.FC = () => {
           p.point(p.random(p.width), p.random(p.height));
         }
 
-        const isHovering = (p.mouseX >= 0 && p.mouseX <= p.width && p.mouseY >= 0 && p.mouseY <= p.height);
+        const isHovering = (p.mouseX !== 0 || p.mouseY !== 0) && (p.mouseX >= 0 && p.mouseX <= p.width && p.mouseY >= 0 && p.mouseY <= p.height);
 
         p.noFill();
 
