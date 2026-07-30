@@ -234,6 +234,10 @@ function App() {
               <span className="skill-label">{t('sections.skills_tools_label')}:</span>
               <span className="skill-value">{t('sections.skills_tools')}</span>
             </div>
+            <div className="skill-row">
+              <span className="skill-label">{t('sections.skills_spoken_languages_label')}:</span>
+              <span className="skill-value">{t('sections.skills_spoken_languages')}</span>
+            </div>
           </div>
         </section>
 
