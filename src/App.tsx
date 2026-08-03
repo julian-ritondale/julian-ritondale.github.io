@@ -120,6 +120,7 @@ function App() {
               <span className="edu-date">{t('sections.education_time')}</span>
             </div>
             <div className="edu-degree">{t('sections.education_degree')}</div>
+            <div className="edu-minor">{t('sections.education_minor')}</div>
           </div>
         </section>
 
